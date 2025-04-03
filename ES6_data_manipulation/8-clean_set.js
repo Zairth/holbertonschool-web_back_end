@@ -2,7 +2,7 @@ export default function cleanSet(set, startString) {
   const iterator = set.values();
   let newString = '';
 
-  if (startString === '') {
+  if (startString === '' || startString.length === 0) {
     return newString;
   }
 
