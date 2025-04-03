@@ -6,6 +6,10 @@ export default function cleanSet(set, startString) {
     return newString;
   }
 
+  if (startString.length === 0) {
+    return newString;
+  }
+
   for (let element of iterator) {
     element = String(element);
     if (element.startsWith(startString)) {
