@@ -1,7 +1,7 @@
 export default function cleanSet(set, startString) {
   const iterator = set.values();
 
-  const len = startString.trim().length;
+  const len = startString.length;
 
   if (len !== 0) {
     let newString = '';
