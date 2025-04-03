@@ -2,10 +2,6 @@ export default function cleanSet(set, startString) {
   const iterator = set.values();
   let newString = '';
 
-  if (startString === '') {
-    return newString;
-  }
-
   for (let element of iterator) {
     element = String(element);
     if (element.startsWith(startString)) {
