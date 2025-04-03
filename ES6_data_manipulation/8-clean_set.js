@@ -2,11 +2,11 @@ export default function cleanSet(set, startString) {
   const iterator = set.values();
   let newString = '';
 
-  if (!startString || startString === '') {
+  if (!startString || startString === '' || typeof startString !== 'string') {
     return newString;
   }
 
-  for (let element of iterator) {
+  for (const element of iterator) {
     if (element.startsWith(startString)) {
       newString += element.replace(startString, '');
       newString += '-';
