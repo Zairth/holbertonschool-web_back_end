@@ -6,7 +6,7 @@ export default function signUpUser(firstName, lastName) {
         lastName,
       });
     } catch (error) {
-      reject(new Error('The fake API is not working currently'));
+      reject(new Error('An error occured'));
     }
   });
 }
