@@ -4,8 +4,10 @@ import asyncio
 import random
 
 
+"""module to add a random delay"""
+
+
 async def wait_random(max_delay=10):
-    """module to add a random delay"""
     delay = random.uniform(0, max_delay)
     await asyncio.sleep(delay)
     return delay
