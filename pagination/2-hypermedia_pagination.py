@@ -63,5 +63,5 @@ class Server:
             "data": hyper_data,
             "next_page": next_page,
             "prev_page": prev_page,
-            "total_page": math.ceil(len(all_datas) / page_size)
+            "total_pages": math.ceil(len(all_datas) / page_size)
         }
