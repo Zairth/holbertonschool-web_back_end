@@ -2,7 +2,7 @@
 """1-simple_pagination.py"""
 from typing import Tuple
 import csv
-from typing import List
+from typing import List, Dict, Any
 import math
 
 
@@ -47,7 +47,7 @@ class Server:
         start, end = index_range(page, page_size)
         return datas[start:end]
 
-    def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict[str, Any]:
         """Get Hypermedia
         """
         hyper_data = self.get_page(page, page_size)
